@@ -24,3 +24,9 @@ HSAIL Offline Finalizer (HOF): a tool for offline finalization of HSAIL or BRIG 
   -amd-reserved-num-sgprs=[NUM]  reserve [NUM] SGPRs
 
 ```
+
+# Running the example
+
+The HOF example demonstrates the usage of the HOF tool to perform offline finalization of an hsail file and to launch a kernel from the finalized object.
+It requires the [HSA Runtime](https://github.com/HSAFoundation/HSA-Runtime-AMD) and development files.  Simply type `make` to compile the example. 
+
