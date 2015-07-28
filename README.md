@@ -10,7 +10,10 @@ HSAIL Offline Finalizer (HOF): a tool for offline finalization of HSAIL or BRIG 
   -model=[small|large]           machine model to finalize for (optional)
   -profile=[base|full]           profile to finalize for (optional)
   -target=[ISA]                  target instruction set architecture (optional)
-                                 "7:0:0" used if "-target" is omitted
+                                 current supported target:
+                                    7:0:0  for CI (Kaveri, Bonaire)
+                                    8:0:1  for subset of VI (Carizzo)
+                                 7:0:0 is used if "-target" is omitted
   -output=[OUT]                  output filename (optional)
                                  "a.o" used if "-output" is omitted
   -brig [BRIGs]                  one or more brig module files
